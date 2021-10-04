@@ -12538,6 +12538,8 @@ yx-axis
 @media only screen and (min-width: 320px) and (max-width: 959px) {
   .rastyagka {
     height: 130px;
+    justify-content: space-between;
+    padding-right: 20px;
   }
   .rastyagka-item img {
     width: 180px;
