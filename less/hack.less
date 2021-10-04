@@ -1,0 +1,38 @@
+@media only screen and (min-width: 960px) and (max-width: 1200px) {
+
+	// Microsoft Internet Explorer (10+)	
+	@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+		.anons-text {
+			margin-right: -100px;
+		}
+	}
+	
+	// Mozzila Firefox (1.5+)
+	@-moz-document url-prefix() {
+
+		.anons-text {
+			margin-right: -100px;
+		}
+	}
+
+}
+
+@media only screen and (min-width: 1280px) and (max-width: 1920px) {
+
+	@-moz-document url-prefix() {
+
+		.anons {
+
+			.container {
+
+				&:before {
+					left: 403px !important;
+				}
+
+				&:after {
+					right: 472px !important;
+				}
+			}
+		}
+	}
+}

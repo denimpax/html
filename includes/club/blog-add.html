@@ -1,0 +1,33 @@
+<div class="blog container">
+	<div class="blog-page-head">
+		<h1>Создание нового поста</h1>
+	</div>
+
+	<form class="blog-wrapp">
+		<div class="blog-wrapp-add">
+			<div class="title">Содержание</div>
+			<textarea id="#textarea"></textarea>
+		</div>
+		<div class="blog-wrapp-sidebar">
+			<div class="add">
+				<div class="add-row">
+					<div class="add-row-title">Обложка</div>
+					<div class="error">Добавьте обложку</div>
+					<div class="count">Размер фото 1280 px</div>
+					<input type="file">
+				</div>
+				<div class="add-row error">
+					<div class="add-row-title">Заголовок</div>
+					<div class="error">Добавьте заголовок</div>
+					<div class="count">
+						<input readonly type="text" name="count" size="3" value="30"> символов осталось
+					</div>
+					<input type="text" name="title" onKeyDown="limitText(this,this.form.count,30);" onKeyUp="limitText(this,this.form.count,30);">
+				</div>
+				<div class="add-row">
+					<input type="submit" class="btn blue" value="Опубликовать">
+				</div>
+			</div>
+		</div>
+	</form>
+</div>

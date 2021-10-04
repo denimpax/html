@@ -1,0 +1,1214 @@
+@import "../variables";
+@import "../layout";
+@import "../fonts";
+@import "../media-queries/layout";
+
+.top-subscription {
+	background: #f5f5f5;
+	padding: 35px 0 40px;
+
+	&-title {
+		color: #000;
+		font: 34px/36px @open-sb;
+		margin-bottom: 44px;
+		text-align: center;
+	}
+
+	&-left, &-right {
+		width: 400px;
+		height: 226px;
+		background: url('../svg/macbook.svg') 0 0 no-repeat;
+		background-size: contain;
+		margin: 0px 40px;
+		text-align: center;
+		position: relative;
+
+		.profitable {
+			position: absolute;
+			top: 0px; right: 39px;
+		}
+
+		.title {
+			font: 22px/26px @open-sb;
+			margin: 35px 0 15px;
+			letter-spacing: .5;
+		}
+
+		.price {
+			color: @red-dark;
+			font: 45px/45px @open-sb;
+			margin: 0 0 25px -10px;
+
+			span {
+				position: relative;
+
+				&.sale {
+					color: #999;
+					font: 24px @open-r;
+					text-decoration: line-through;
+					margin-right: 15px;
+
+					&:after {
+						font-size: 15px;
+						top: 11px; right: -12px;
+					}
+				}
+
+				&:after {
+					content: 'r';
+					font: 25px @icon;
+					position: absolute;
+					top: 24px; right: -21px;
+				}
+			}
+		}
+
+		.button {
+		}
+	}
+
+	.container {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+}
+
+.subscription {
+	box-shadow: 0 5px 3px -5px rgba(0,0,0,.5);
+	border-radius: 3px;
+	border: 1px solid #e9eaeb;
+	border-top: 0;
+	text-align: center;
+	padding: 15px 0;
+	position: relative;
+
+	&-title {
+		color: @red-dark;
+		font: 22px/26px @open-r;
+		margin-top: 20px;
+
+		span {
+			color: #000;
+			font: 16px/20px @open-sb;
+			display: block;
+			margin-top: 10px;
+		}
+	}
+
+	&-wrapp {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		padding: 30px;
+		margin-bottom: 5px;
+	}
+
+	&-mts {
+		margin: 30px 0 50px;
+
+		form {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;	
+		}
+
+		p {
+			line-height: 24px;
+		}
+
+		b {
+			color: #999;
+			display: block;
+			font: 14px/14px @open-r;
+			margin: 5px 0 -5px;
+		}
+	}
+
+	&-left, &-right {
+		background: url('../svg/macbook.svg') 0 0 no-repeat;
+		background-size: contain;
+		text-align: center;
+		position: relative;
+
+		.profitable {
+			position: absolute;
+			height: 60px;
+			top: 0px;
+		}
+
+		.price {
+			color: @red-dark;
+
+			span {
+				position: relative;
+
+				&.sale {
+					color: #999;
+					text-decoration: line-through;
+				}
+
+				&:after {
+					content: 'r';
+					position: absolute;
+				}
+			}
+		}
+	}
+
+	p {
+		font-size: 14px;
+		padding: 15px 40px 0;
+	}
+
+	.blue {
+		background: #5ca2f9;
+
+		&:hover {
+			background: #4194fb;
+		}
+	}
+
+	&:before {
+		content: '';
+		height: 3px;
+		display: block;
+		background: @red-dark;
+		position: absolute;
+		top: 0; left: -1px; right: -1px;
+	}
+
+	&:after {
+		content: 'p';
+		color: @red-dark;
+		font: 45px @icon;
+		display: block;
+		background: #fff;
+		padding: 0 15px;
+		position: absolute;
+		top: -23px; left: 50%;
+		margin-left: -37px;
+	}
+}
+
+.buy {
+	margin-bottom: 20px; 
+	
+	&-subscription {
+		margin-bottom: 5px;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+		text-decoration: none;
+		background: @red-dark;
+
+		p {
+			padding: 0;
+			margin: 0;
+			position: relative;
+
+			&.title {
+				width: 60%;
+				padding: 15px 0 15px 30px;
+				color: #fff;
+				border: 1px solid @red-dark;
+				border-right: 0;
+
+				&:after {
+					content: ''; 
+					position: absolute;
+					right: -10px; top: 13px;
+					border: 10px solid transparent;
+					border-left: 10px solid @red-dark;
+					z-index: 1;
+					.transition-delay(all 250ms ease-in-out, 260ms);
+				}
+			}
+
+			&.sale {
+				width: 20%;
+				color: #999;
+				text-align: center;
+				background: #eee;
+				text-decoration: line-through;
+				padding: 18px 0 17px;
+				display: flex;
+				justify-content: center;
+				border-top: 1px solid #e9eaeb;
+				border-bottom: 1px solid #e9eaeb;
+
+				&:before {
+					content: ''; 
+					position: absolute;
+					right: -10px; top: 15px;
+					border: 10px solid transparent;
+					border-left: 10px solid #eee;
+					z-index: 1;
+					.transition-delay(all 250ms ease-in-out, 0);
+				}
+
+				&:after {
+					content: 'r';
+					font: 10px @icon;
+					margin-top: 5px;
+					margin-left: 3px;
+				}
+			}
+
+			&.price {
+				width: 20%;
+				color: @red-dark;
+				text-align: center;
+				font: 24px/22px @open-sb;
+				padding: 15px 0;
+				display: flex;
+				justify-content: center;
+				background: #fff;
+				border: 1px solid #e9eaeb;
+				border-left: 0;
+
+				&:after {
+					content: 'r';
+					font: 14px @icon;
+					margin-top: 6px;
+					margin-left: 3px;
+				}
+			}
+		}
+
+		&:hover {
+
+			p {
+
+				&.title {
+
+					&:after {
+						right: -20px;
+						.transition-delay(all 250ms ease-in-out, 0);
+					}
+				}
+
+				&.sale {
+
+					&:before {
+						right: -20px;
+						.transition-delay(all 250ms ease-in-out, 260ms);
+					}
+				}
+			}
+		}
+	}
+
+	&-more {
+		width: 49.4%;
+		color: #999;
+		background: #eee;
+		display: block;
+		text-decoration: none;
+		border: 1px solid #e9eaeb;
+		padding: 15px 0;
+		text-align: center;
+
+		&:hover {
+			color: #999;
+			background: #e9eaeb;
+		}
+	}
+
+	&-friend {
+		width: 49.4%;
+		color: @red-dark;
+		background: #fff;
+		display: block;
+		text-decoration: none;
+		border: 1px solid #e9eaeb;
+		padding: 15px 0;
+		text-align: center;
+
+		&:hover {
+			background: #eee;
+		}
+	}
+
+	&-wrapp {
+		display: flex;
+		justify-content: space-between;
+	}
+}
+
+.corp-form {
+	background: #ececec;
+	padding-bottom: 20px;
+
+	&-content {
+		width: 92%;
+		margin: 0 auto;
+
+		p {
+			font: 20px/26px @light;
+		}
+
+		strong {
+			font: 20px/26px @regular;
+		}
+
+		ul {
+
+			li {
+				font: 20px/26px @light;
+				margin-bottom: 5px;
+			}
+		}
+	}
+
+	&-button {
+		color: @red-dark;
+		font: 26px @regular;
+		text-align: center;
+		text-decoration: none;
+		padding: 20px 10px;
+		margin-bottom: -21px;
+		display: block;
+		.transition(all 250ms ease-in-out);
+
+		span {
+			position: relative;
+			display: inline-block;
+			margin-left: -22px;
+
+			&:after {
+				content: @arrow-l;
+				font: 24px @icon;
+				display: block;
+				position: absolute;
+				top: 6px; right: -20px;
+				.transform(rotate(90deg));
+				.transition(all 250ms ease-in-out);
+			}
+		}
+
+		&.active {
+
+			span {
+
+				&:after {
+					.transform(rotate(270deg));
+				}
+			}
+		}
+	}
+
+	&-form {
+		display: block;
+		padding-bottom: 20px;
+		display: none;
+
+		&_wrapp {
+			width: 92%;
+			margin: 0 auto;
+
+			p {
+				font: 20px/26px @bold;
+			}
+
+			&-row {
+				width: 100%;
+				margin-left: -5px;
+				margin-bottom: 20px;
+				position: relative;
+
+				label {
+					display: block;
+					font: 14px/18px @open-r;
+					margin-bottom: 5px;
+
+					&:before {
+						content: '*';
+						color: @red;
+						font-size: 16px;
+						display: inline-block;
+						vertical-align: top;
+						margin: 2px 3px 0 0;
+					}
+				}
+
+				input[type="text"] {
+					width: 100%;
+					border: 1px solid #ccc;
+					padding: 5px;
+					background: #fff;
+				}
+
+				textarea {
+					width: 100%;
+					min-height: 180px;
+					border: 1px solid #ccc;
+					padding: 5px;
+					background: #fff;
+					resize: vertical;
+				}
+
+				.button {
+					text-align: center;
+				}
+
+				.error-mess {
+					color: @red-dark;
+					font-size: 12px;
+					position: absolute;
+					bottom: 10px; right: 0;
+					display: none;
+				}
+
+				&.error {
+
+					input, textarea {
+						border-color: @red-dark;
+					}
+
+					.error-mess {
+						display: block;
+					}
+				}
+
+				&:last-child {
+					text-align: center;
+				}
+			}
+		}
+	}
+}
+
+.subj {
+	text-decoration: none;
+	display: block;
+	text-align: center;
+	background: @red-dark;
+
+	&-wrapp {
+		padding: 25px 40px;
+		display: inline-block;
+		background: #f8f8f8;
+		.transform(skewX(-20deg));
+		.transition-delay(all 250ms ease-in-out, 0);
+
+		span {
+			color: @red-dark;
+			display: inline-block;
+			font: 30px/30px @regular;
+			.transform(skewX(20deg));
+		}
+	}
+
+	&:hover {
+
+		.subj-wrapp {
+			padding: 25px 100px;
+		}
+	}
+}
+
+.wrapp {
+	display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 50px auto 0;
+}
+
+.spec-shini {
+	background: url('../spec/shini/bg.jpg') top center no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+
+	&_wrapp {
+		background: #f8f8f8;
+
+	 	p {margin: 20px;}
+
+	 	span {
+	 		color: #999;
+	 		font-size: 14px;
+	 		padding: 20px;
+	 		font-family: @italic;
+	 	}
+
+		&-title {
+			font-size: 40px;
+			line-height: 50px;
+			padding: 10px 20px 20px;
+		}
+
+		._item {
+			display: flex;
+			padding: 20px;
+			background: #f8f8f8;
+			cursor: pointer;
+			border-bottom: 2px solid #999;
+
+			img {
+				height: 200px;
+				margin-right: 30px;
+			}
+
+			&-text {
+
+				&-title {
+					color: #0069b4;
+					font-family: @exo-r;
+					font-size: 34px;
+					line-height: 44px;
+					margin-bottom: 15px;
+				}
+
+				&-text {
+					display: flex;
+					font-size: 20px;
+					margin-bottom: 10px;
+
+					&:before {
+						content: '';
+						width: 6px;
+						height: 6px;
+						display: block;
+						margin: 10px 10px 0 0;
+						background: #0069b4;
+					}
+				}
+			}
+		}
+
+		.red {
+
+			._item-text-title {
+				color: red;
+			}
+
+			._item-text-text:before {
+				background: red;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 1200px) {
+
+	.spec-shini {
+
+		.container-spec {
+			width: 960px;
+			max-width: 960px;
+			margin: 50px auto 0;
+			display: flex;
+  		justify-content: space-between;
+		}
+	}
+
+	.spec-shini_wrapp {
+		width: 620px;
+	}
+
+	.club-widget {
+		width: 100%;
+		display: block;
+		position: relative;
+		text-decoration: none;
+		margin: 10px 0;
+		color: #000;
+
+		span {
+			font: 20px/68px @regular;
+			height: 70px;
+			display: block;
+			vertical-align: top;
+			text-align: center;
+			background: #fafafa;
+			margin-left: 140px;
+			padding: 0 10px;
+			border-radius: 3px;
+			box-shadow: 0 1px 3px 1px rgba(0,0,0,.15);
+			position: relative;
+
+			&:before {
+				content: '';
+				width: 14px;
+				height: 22px;
+				position: absolute;
+				top: 50%; left: -13px;
+				margin-top: -11px;
+				background: url('../img/_bef-club-w.png');
+			}
+		}
+
+		&:hover {
+			color: #000;
+		}
+
+		&:before {
+			content: '';
+			width: 114px;
+			height: 108px;
+			float: left;
+			background: url('../img/icon/сlub-ico.png');
+		}
+	}
+
+	.wrapp {
+		width: 960px;
+		min-width: 960px;
+
+		.content {
+			width: 620px;
+		}
+	}
+
+	.subscription {
+
+		&-left, &-right {
+			width: 262px;
+			height: 150px;
+
+			.profitable {
+				right: 25px;
+			}
+
+			.title {
+				font: 16px/22px @open-sb;
+				margin: 20px 0 10px;
+				letter-spacing: .5;
+			}
+
+			.price {
+				color: @red-dark;
+				font: 30px/30px @open-sb;
+				margin: 0 0 10px -10px;
+
+				span {
+					position: relative;
+
+					&.sale {
+						color: #999;
+						font: 16px @open-r;
+						text-decoration: line-through;
+						margin-right: 15px;
+
+						&:after {
+							font-size: 11px;
+							top: 7px; right: -10px;
+						}
+					}
+
+					&:after {
+						content: 'r';
+						font: 17px @icon;
+						position: absolute;
+						top: 16px; right: -16px;
+					}
+				}
+			}
+
+			.button {
+				font-size: 12px;
+				padding: 5px 15px;
+			}
+		}
+	}
+
+	.banner-mobi {
+		display: none;
+	}
+}
+
+@media only screen and (min-width: 1201px) {
+
+	.spec-shini {
+
+		.container-spec {
+			width: 1200px;
+			max-width: 1200px;
+			margin: 50px auto 0;
+			display: flex;
+  		justify-content: space-between;
+		}
+	}
+
+	.spec-shini_wrapp {
+		width: 860px;
+	}
+
+	.club-widget {
+		width: 100%;
+		margin: 10px 0;
+		display: block;
+		position: relative;
+		text-decoration: none;
+		color: #000;
+
+		span {
+			font: 29px/68px @regular;
+			height: 70px;
+			display: block;
+			vertical-align: top;
+			text-align: center;
+			background: #fafafa;
+			margin-left: 140px;
+			padding: 0 10px;
+			border-radius: 3px;
+			box-shadow: 0 1px 3px 1px rgba(0,0,0,.15);
+			position: relative;
+
+			&:before {
+				content: '';
+				width: 14px;
+				height: 22px;
+				position: absolute;
+				top: 50%; left: -13px;
+				margin-top: -11px;
+				background: url('../img/_bef-club-w.png');
+			}
+		}
+
+		&:before {
+			content: '';
+			width: 114px;
+			height: 108px;
+			float: left;
+			background: url('../img/icon/сlub-ico.png');
+		}
+
+		&:hover {
+			color: #000;
+		}
+	}
+
+	.wrapp {
+		width: 1200px;
+		min-width: 1200px;
+
+		.content {
+			width: 860px;
+		}
+	}
+
+	.subscription {
+
+		&-left, &-right {
+			width: 367px;
+			height: 205px;
+
+			.profitable {
+				right: 39px;
+			}
+
+			.title {
+				font: 22px/26px @open-sb;
+				margin: 35px 0 10px;
+				letter-spacing: .5;
+			}
+
+			.price {
+				color: @red-dark;
+				font: 40px/40px @open-sb;
+				margin: 0 0 20px -10px;
+
+				span {
+					position: relative;
+
+					&.sale {
+						color: #999;
+						font: 24px @open-r;
+						text-decoration: line-through;
+						margin-right: 15px;
+
+						&:after {
+							font-size: 15px;
+							top: 11px; right: -12px;
+						}
+					}
+
+					&:after {
+						content: 'r';
+						font: 20px @icon;
+						position: absolute;
+						top: 24px; right: -17px;
+					}
+				}
+			}
+		}
+	}
+
+	.banner-mobi {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 959px) {
+
+	.spec-shini {
+
+		.container-spec {
+			width: 100%;
+			max-width: 100%;
+			margin: 50px auto 0;
+			display: block;
+  		justify-content: space-between;
+		}
+
+		.sidebar {
+			background: #fff;
+			padding: 10px;
+		}
+	}
+
+	.spec-shini_wrapp {
+		width: 90%;
+		margin: 0 auto 30px;
+
+		._item {
+			display: flex;
+		  flex-direction: column;
+		  justify-content: center;
+		  align-items: center;
+
+		  img {
+		  	margin: 0 0 20px;
+		  }
+
+		  &-text {
+
+		  	&-title {
+		  		font-size: 30px;
+		  		line-height: 40px;
+		  	}
+
+		  	&-text {
+		  		padding-left: 15px;
+		  		position: relative;
+
+		  		&:before {
+		  			margin: 0;
+		  			position: absolute;
+		  			top: 10px; left: 0;
+		  		}
+		  	}
+		  }
+		}
+	}
+
+	.club-widget {
+		width: 100%;
+		margin: 10px 0;
+		display: block;
+		position: relative;
+		text-decoration: none;
+		color: #000;
+
+		span {
+			width: 33% !important;
+			font: 20px/27px @regular;
+			height: auto;
+			display: block;
+			vertical-align: top;
+			text-align: left;
+			background: #fafafa;
+			margin-left: 80px;
+			padding: 5px 10px;
+			border-radius: 3px;
+			box-shadow: 0 1px 3px 1px rgba(0,0,0,.15);
+			position: relative;
+
+			&:before {
+				content: '';
+				width: 14px;
+				height: 22px;
+				position: absolute;
+				top: 50%; left: -13px;
+				margin-top: -11px;
+				background: url('../img/_bef-club-w.png');
+			}
+		}
+
+		&:hover {
+			color: #000;
+		}
+
+		&:before {
+			content: '';
+			width: 60px;
+			height: 108px;
+			margin-left: 10px;
+			float: left;
+			background: url('../img/icon/сlub-ico.png') no-repeat;
+			background-size: contain;
+		}
+	}
+
+	.top-subscription {
+		padding-bottom: 20px;
+
+		&-title {
+			color: #000;
+			font: 25px/30px @open-sb;
+			margin-bottom: 30px;
+			text-align: center;
+		}
+
+		&-left, &-right {
+			width: 300px;
+			height: 180px;
+			background: url('../svg/macbook.svg') 0 0 no-repeat;
+			background-size: contain;
+			margin: 0 0 20px;
+			text-align: center;
+			position: relative;
+
+			.profitable {
+				right: 29px;
+				height: 70px;
+			}
+
+			.title {
+				font: 18px/22px @open-sb;
+				margin: 20px 0 10px;
+				letter-spacing: .5;
+			}
+
+			.price {
+				color: @red-dark;
+				font: 35px/35px @open-sb;
+				margin: 0 0 20px -10px;
+
+				span {
+					position: relative;
+
+					&.sale {
+						color: #999;
+						font: 18px @open-r;
+						text-decoration: line-through;
+						margin-right: 15px;
+
+						&:after {
+							font-size: 11px;
+							top: 9px; right: -12px;
+						}
+					}
+
+					&:after {
+						content: 'r';
+						font: 20px @icon;
+						position: absolute;
+						top: 17px; right: -18px;
+					}
+				}
+			}
+
+			.button {
+			}
+		}
+
+		.container {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+	}
+
+	.subscription {
+		border: 0;
+		border-radius: 0;
+		margin-bottom: 20px;
+
+		&-wrapp {
+			padding-right: 0;
+			padding-left: 0;
+		}
+
+		&-left, &-right {
+			width: 300px;
+			height: 180px;
+			background: url('../svg/macbook.svg') 0 0 no-repeat;
+			background-size: contain;
+			margin: 0 0 20px;
+			text-align: center;
+			position: relative;
+
+			.profitable {
+				right: 29px;
+			}
+
+			.title {
+				font: 18px/22px @open-sb;
+				margin: 20px 0 10px;
+				letter-spacing: .5;
+			}
+
+			.price {
+				color: @red-dark;
+				font: 35px/35px @open-sb;
+				margin: 0 0 20px -10px;
+
+				span {
+					position: relative;
+
+					&.sale {
+						color: #999;
+						font: 18px @open-r;
+						text-decoration: line-through;
+						margin-right: 15px;
+
+						&:after {
+							font-size: 11px;
+							top: 9px; right: -12px;
+						}
+					}
+
+					&:after {
+						content: 'r';
+						font: 20px @icon;
+						position: absolute;
+						top: 17px; right: -18px;
+					}
+				}
+			}
+
+			.button {
+			}
+		}
+
+		&-wrapp {
+			padding-bottom: 0;
+			justify-content: center;
+		}
+	}
+
+	.banner-mobi {
+		width: 100%;
+		color: #fff;
+		font: 14px/20px @open-b;
+		text-align: center;
+		padding: 20px 0;
+		margin: 10px 0;
+		display: block;
+		background: url('../img/mob-ban-kia.png') center left no-repeat;
+		position: relative;
+
+		span {
+			position: relative;
+			z-index: 5;
+			opacity: 0;
+		}
+	}
+
+	.corp-form {
+
+		&-content {
+
+			p {
+				font: 20px/26px @light;
+			}
+
+			strong {
+				font: 20px/26px @regular;
+			}
+
+			ul {
+
+				li {
+					font: 20px/26px @light;
+					margin-bottom: 5px;
+				}
+			}
+		}
+
+		&-button {
+			font: 20px @regular;
+
+			span {
+
+				&:after {
+					top: 4px;
+				}
+			}
+
+			&.active {
+
+				span {
+
+					&:after {
+						.transform(rotate(270deg));
+					}
+				}
+			}
+		}
+
+		&-form {
+			padding-bottom: 0;
+
+			&_wrapp {
+
+				&-row {
+
+					&:last-child {
+						margin-bottom: 0;
+					}
+				}
+			}
+		}
+	}
+
+	.subj {
+		
+		&-wrapp {
+			padding: 15px 10px;
+
+			span {
+				font-size: 20px !important;
+				line-height: 24px !important;
+				color: @red-dark !important;
+			}
+		}
+
+		&:hover, &:focus, &:visited {
+
+			.subj-wrapp {
+				padding: 15px 10px;
+			}
+		}
+	} 
+}
+
+@media only screen and (min-width: 960px) {
+
+		.js-w_closed {
+			color: #fff;
+			font-size: 30px;
+			position: absolute;
+			top: 0; right: 35px;
+			-moz-transform: rotate(45deg);
+			-webkit-transform: rotate(45deg);
+			-o-transform: rotate(45deg);
+			-ms-transform: rotate(45deg);
+			transform: rotate(45deg);
+			text-decoration: none;
+			opacity: .5;
+			z-index: 11;
+		}
+}
+
+@media only screen and (min-width: 300px) and (max-width: 959px) {
+
+		.js-w_closed {
+			color: #fff;
+			font-size: 30px;
+			position: absolute;
+			top: 2px; right: 3px;
+			-moz-transform: rotate(45deg);
+			-webkit-transform: rotate(45deg);
+			-o-transform: rotate(45deg);
+			-ms-transform: rotate(45deg);
+			transform: rotate(45deg);
+			text-decoration: none;
+			opacity: .5;
+			z-index: 11;
+		}
+}

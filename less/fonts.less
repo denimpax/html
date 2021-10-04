@@ -1,0 +1,128 @@
+@font-path:		'../fonts';
+
+// Roboto
+@regular:       'Roboto Regular';
+@bold:          'Roboto Bold';
+@bold-italic:   'Roboto Bold Italic';
+@italic:        'Roboto Italic';
+@light:         'Roboto Light';
+@light-italic:  'Roboto Light Italic';
+@black:         'Roboto Black';
+@black-italic:  'Roboto Black Italic';
+@medium:        'Roboto Medium';
+@medium-italic: 'Roboto Medium Italic';
+@thin:          'Roboto Thin';
+@thin-italic:   'Roboto Thin Italic';
+
+// OpenSans
+@open-r:   'OpenSans';
+@open-b:   'OpenSans Bold';
+@open-i:   'OpenSans Italic';
+@open-l:   'OpenSans Light';
+@open-bi:  'OpenSans Bold Italic';
+@open-sb:  'OpenSans Semi Bold';
+@open-sbi: 'OpenSans Semi Bold Italic';
+
+// Exo
+@exo-r: 'Exo2 Regular';
+
+// Fusion
+@fusion: 'Fusion';
+
+// Special
+@font-resource: 'GetVoIP Grotesque';
+
+// Icon
+@icon: 'Icons';
+
+@user: 			'\75'; // u
+@search: 		'\73'; // s
+@vkontakte: '\76'; // v
+@twitter: 	'\74'; // t
+@instagram: '\69'; // i
+@youtube: 	'\79'; // y
+@facebook: 	'\66'; // f
+@rubl: 			'\72'; // r
+@arrow-l: 	'\3c'; // <
+@arrow-dr: 	'\3e'; // >
+@crash:			'\63'; // c
+@comment:		'\63'; // C
+@pay-post:  '\70'; // p
+@forum: 		'\46'; // F
+@reply:		  '\52'; // R
+@star: 			'\53'; // S
+@yes: 			'\59'; // Y
+@no: 				'\4e'; // N
+@camera: 		'\e900';
+@pdf: 			'\e901';
+@photo: 		'\e902';
+@upload: 		'\e903';
+@pen: 			'\e904';
+@add-blog: 	'\e905';
+@add-forum: '\e906';
+@chat: 			'\e907';
+@comments: 	'\e908';
+@blog: 			'\e909';
+@star: 			'\e90a';
+@eyes: 			'\e90b';
+@date: 			'\e90c';
+@time: 			'\e90d';
+@location: 	'\e90e';
+@meeting: 	'\e90f';
+@upload: 		'\e910';
+@att: 			'\e911';
+@like: 			'\e912';
+@attention: '\e913';
+@car: 			'\e914';
+@track: 		'\e915';
+@future: 		'\e916';
+@law: 			'\e917';
+@sport: 		'\e918';
+@garage: 		'\e919';
+@camera: 		'\e900';
+@technical: '\e91a';
+@fire:		  '\e91c';
+@mc: 				'\e921';
+@microphone:'\e922';
+
+.define_font-face(@name, @filename, @weight : normal, @style : normal, @stretch : normal) {
+	@font-face {
+		font-family: '@{name}';
+		font-weight:  @weight;
+		font-style:   @style;
+		src: 		 url('@{font-path}/@{filename}.eot');
+		src:   local('@{name}'),
+						 url('@{font-path}/@{filename}.eot?#iefix') format('embedded-opentype'),
+						 url('@{font-path}/@{filename}.ttf') format('truetype'),
+						 url('@{font-path}/@{filename}.svg#@{name}') format('svg');
+	}
+}
+
+.define_font-face(@regular,       'roboto');
+.define_font-face(@bold,          'robotobold');
+.define_font-face(@bold-italic,   'robotobolditalic');
+.define_font-face(@italic,        'robotoitalic');
+.define_font-face(@light,         'robotolight');
+.define_font-face(@light-italic,  'robotolightitalic');
+.define_font-face(@black,         'robotoblack');
+.define_font-face(@black-italic,  'robotoblackitalic');
+.define_font-face(@medium,        'robotomedium');
+.define_font-face(@medium-italic, 'robotomediumitalic');
+.define_font-face(@thin,          'robotothin');
+.define_font-face(@thin-italic,   'robotothinitalic');
+
+.define_font-face(@open-r,   'OpenSans');
+.define_font-face(@open-b,   'OpenSans-Bold');
+.define_font-face(@open-i,   'OpenSans-Italic');
+.define_font-face(@open-l,   'OpenSans-Light');
+.define_font-face(@open-bi,  'OpenSans-BoldItalic');
+.define_font-face(@open-sb,  'OpenSans-Semibold');
+.define_font-face(@open-sbi, 'OpenSans-SemiboldItalic');
+
+.define_font-face(@exo-r, 'Exo2-Regular');
+
+.define_font-face(@fusion, 'Fusion');
+
+.define_font-face(@icon, 'icon');
+
+.define_font-face(@font-resource, 'Getvoipgrotesque');

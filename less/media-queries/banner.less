@@ -1,0 +1,128 @@
+.rastyagka {
+	height: 250px;
+	margin-top: 20px;
+  display: flex;
+  align-items: center;
+	position: relative;
+	overflow: hidden;
+	cursor: pointer;
+	background: #fff;
+	border: 1px solid #ccc;
+  z-index: 1;
+
+  &-item {
+
+    img {
+      width: 260px;
+      display: block;
+    }
+  }
+
+  &-row {
+    display: flex;
+    align-items: center;
+
+    &-text {
+      font: 80px/84px @fusion;
+      margin-left: 30px;
+    }
+
+    &-partner {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-right: 20px;
+
+      .wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        img {
+          height: 40px;
+
+          &:last-child {
+            margin-left: 30px;
+          }
+        }
+      }
+    }
+  }
+
+	.js-w_closed {
+		top: 1px !important;
+		right: 7px !important;
+		color: #ccc;
+		font-size: 30px;
+		font-family: @light;
+		position: absolute;
+		-moz-transform: rotate(45deg);
+		-webkit-transform: rotate(45deg);
+		-o-transform: rotate(45deg);
+		-ms-transform: rotate(45deg);
+		transform: rotate(45deg);
+		text-decoration: none;
+		opacity: .5;
+		z-index: 11;
+  }
+}
+
+@media only screen and (min-width: 960px) and (max-width: 1199px) {
+  .rastyagka {
+    height: 150px;
+  
+    &-row {
+  
+      &-text {
+        font: 64px/54px @fusion;
+      }
+  
+      &-partner {
+        margin-right: 30px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 959px) {
+  .rastyagka {
+    height: 130px;
+
+    &-item {
+      
+      img {
+        width: 180px;
+        margin-left: -30px;
+      }
+    }
+  
+    &-row {
+      flex-direction: column;
+  
+      &-text {
+        font: 30px/30px @fusion;
+        margin-left: 0;
+      }
+  
+      &-partner {
+        margin-right: 0;
+
+        p {
+          font-size: 10px;
+        }
+
+        .wrapper {
+
+          img {
+            height: 14px;
+            margin: 0;
+
+            &:first-child {
+              margin: 0 20px 0 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}

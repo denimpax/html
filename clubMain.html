@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta charset="utf-8">
+		<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+		<title>Клуб | Главная</title>
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<meta name="HandheldFriendly" content="True">
+		<meta name="MobileOptimized" content="320">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+		<meta name="language" content="Russia">
+		<meta name="revisit-after" content="3">
+
+		<link rel="stylesheet" href="static/css/style.css" type="text/css" media="screen, projection">
+
+		<script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+		<script type="text/javascript" src="bower_components/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
+		<script type="text/javascript" src="bower_components/tooltipster/js/jquery.tooltipster.min.js"></script>
+		<script type="text/javascript" src="bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
+		<script type="text/javascript" src="js/lib/jquery.liMarquee.js"></script>
+		<script type="text/javascript" src="js/lib/molly.js"></script>
+		<script type="text/javascript" src="js/script.js"></script>
+		<script type="text/javascript" src="js/club.js"></script>
+
+		<link rel="shortcut icon" href="static/img/favicon.ico">
+
+	</head>
+	<body id="page" class="page-club">
+		<!--#include virtual="includes/layout/chat.html" -->
+		<!--#include virtual="includes/club/header.html" -->
+		<!--#include virtual="includes/club/main-head.html" -->
+		<!--#include virtual="includes/club/menu.html" -->
+		<!--#include virtual="includes/club/main.html" -->
+		<!--#include virtual="includes/layout/anons.html" -->
+		<!--#include virtual="includes/layout/footer.html" -->
+
+		<script>
+			$(document).ready(function(){
+				$('.club-menu li:nth-of-type(2) a').addClass('active');
+			});
+		</script>
+	</body>
+</html>

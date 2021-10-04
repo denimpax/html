@@ -1,0 +1,50 @@
+<div class="discussion container">
+	<div class="discussion-page-head">
+		<h1>Создание нового обсуждения</h1>
+	</div>
+
+	<form class="discussion-wrapp">
+		<div class="discussion-wrapp-add">
+			<div class="title">Содержание</div>
+			<textarea id="#textarea"></textarea>
+		</div>
+		<div class="discussion-wrapp-sidebar">
+			<div class="add">
+				<div class="add-row error">
+				<div class="add-row-title">Заголовок</div>
+					<div class="error">Добавьте заголовок</div>
+					<div class="count">
+						<input readonly type="text" name="count" size="3" value="30"> символов осталось
+					</div>
+					<input type="text" name="title" onKeyDown="limitText(this,this.form.count,30);" onKeyUp="limitText(this,this.form.count,30);">
+				</div>
+				<div class="add-row">
+					<div class="add-row-title">Раздел</div>
+					<div class="error">Выберите раздел</div>
+					<select name="section" id="section" data-placeholder="Выберите раздел">
+						<option label="-"></option>
+						<option value="Легковые автомобили">Легковые автомобили</option>
+						<option value="Грузовики и автобусы">Грузовики и автобусы</option>
+						<option value="Автоспорт">Автоспорт</option>
+						<option value="Закон и право">Закон и право</option>
+						<option value="Будущее автомобиля">Будущее автомобиля</option>
+						<option value="Все обо всем">Все обо всем</option>
+					</select>
+				</div>
+				<div class="add-row">
+					<input type="submit" class="btn blue" value="Опубликовать">
+				</div>
+			</div>
+		</div>
+	</form>
+
+	<div class="discussion-page-rules">
+		<div class="title">Правила публикации тем в «Обсуждениях»:</div>
+		<ol>
+			<li>Раздел «Обсуждения» предназначен для общения подпищеков сайта друг с другом, для обмена мнениями и ценным опытом.</li>
+			<li>Формулируйте свои мысли так, как вы бы формулировали их в личной дружеской беседе.</li>
+			<li>Здесь строжайше запрещены рекламные публикации и размещение анонсов.</li>
+		</ol>
+		<p>Ознакомьтесь также с полными <a href="data/ajax/popup/club-discussion-rules.html" class="ajax-popup">правилами участия</a> в «Обсуждениях».</p>
+	</div>
+</div>
