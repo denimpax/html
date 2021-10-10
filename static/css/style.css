@@ -7646,329 +7646,287 @@ yx-axis
   width: 100%;
   position: relative;
 }
-.page-main .cordiant2018 {
-  width: 155px;
-  height: 110px;
+.page-main .cordiant {
   position: fixed;
-  bottom: 0;
+  display: flex;
+  align-items: flex-end;
+  bottom: 50px;
+  cursor: pointer;
   right: 0;
-  z-index: 100;
-  cursor: default;
-  -webkit-transition: all 250ms ease-in-out;
-  -moz-transition: all 250ms ease-in-out;
-  -o-transition: all 250ms ease-in-out;
-  -ms-transition: all 250ms ease-in-out;
-  transition: all 250ms ease-in-out;
+  z-index: 10;
 }
-@media only screen and (min-width: 1600px) {
-  .page-main .cordiant2018 {
-    height: 130px;
-  }
-}
-.page-main .cordiant2018-content {
-  width: 100%;
-  display: none;
-  position: absolute;
-  bottom: 20px;
-  right: 31px;
+.page-main .cordiant-active {
+  width: 250px;
+  position: relative;
+  margin-right: -100px;
   opacity: 0;
+  visibility: hidden;
   z-index: -1;
-  -webkit-transition: all 250ms ease-in-out;
-  -moz-transition: all 250ms ease-in-out;
-  -o-transition: all 250ms ease-in-out;
-  -ms-transition: all 250ms ease-in-out;
-  transition: all 250ms ease-in-out;
+  transition: all 300ms ease-in-out;
 }
-.page-main .cordiant2018-content-wrapp {
-  z-index: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  bottom: 0;
-  right: 27px;
-  -moz-transform: skewX(-15deg);
-  -webkit-transform: skewX(-15deg);
-  -o-transform: skewX(-15deg);
-  -ms-transform: skewX(-15deg);
-  transform: skewX(-15deg);
-  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e5799+0,092b73+100 */
-  background: #1e5799;
-  /* Old browsers */
-  background: -moz-radial-gradient(center, ellipse cover, #1e5799 0%, #092b73 100%);
-  /* FF3.6-15 */
-  background: -webkit-radial-gradient(center, ellipse cover, #1e5799 0%, #092b73 100%);
-  /* Chrome10-25,Safari5.1-6 */
-  background: radial-gradient(ellipse at center, #1e5799 0%, #092b73 100%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1e5799', endColorstr='#092b73', GradientType=1);
-  /* IE6-9 fallback on horizontal gradient */
-  -webkit-transition: all 250ms ease-in-out;
-  -moz-transition: all 250ms ease-in-out;
-  -o-transition: all 250ms ease-in-out;
-  -ms-transition: all 250ms ease-in-out;
-  transition: all 250ms ease-in-out;
-}
-@media only screen and (min-width: 1600px) {
-  .page-main .cordiant2018-content-wrapp {
-    padding: 0 10px;
-    right: 0;
-  }
-}
-.page-main .cordiant2018-content-wrapp p {
+.page-main .cordiant-active p {
   color: #fff;
+  font: 14px/17px 'Fusion';
   position: relative;
-  z-index: 2;
-  display: block;
-  margin-left: 10px;
-  padding: 0 5px;
-  text-shadow: 0 1px 0 #000000;
-  font: 14px/22px 'OpenSans';
-  -moz-transform: skewX(15deg);
-  -webkit-transform: skewX(15deg);
-  -o-transform: skewX(15deg);
-  -ms-transform: skewX(15deg);
-  transform: skewX(15deg);
-}
-@media only screen and (min-width: 1600px) {
-  .page-main .cordiant2018-content-wrapp p {
-    font: 16px/24px 'OpenSans';
-    padding: 5px 10px;
-  }
-}
-.page-main .cordiant2018-content-wrapp p span {
-  cursor: pointer;
-  border-bottom: 1px dashed #fff;
-}
-.page-main .cordiant2018-content-wrapp p span:hover {
-  border: 0;
-}
-.page-main .cordiant2018-content-wrapp p a {
-  color: #fff;
-  text-decoration: none;
-  border-bottom: 1px solid #fff;
-}
-.page-main .cordiant2018-content-wrapp p a:hover {
-  border: 0;
-}
-.page-main .cordiant2018-content-wrapp p.hide {
-  display: none;
-}
-.page-main .cordiant2018-content-wrapp form {
-  width: 90%;
-  padding: 10px 20px;
-  margin-left: 5px;
-  -moz-transform: skewX(15deg);
-  -webkit-transform: skewX(15deg);
-  -o-transform: skewX(15deg);
-  -ms-transform: skewX(15deg);
-  transform: skewX(15deg);
-  position: relative;
-  z-index: 1;
-  display: none;
-  -webkit-transition: all 250ms ease-in-out;
-  -moz-transition: all 250ms ease-in-out;
-  -o-transition: all 250ms ease-in-out;
-  -ms-transition: all 250ms ease-in-out;
-  transition: all 250ms ease-in-out;
-}
-.page-main .cordiant2018-content-wrapp form input {
-  width: 90%;
-  color: #333;
-  font: 16px/16px 'OpenSans';
-  border: 0;
-  position: relative;
-  z-index: 1;
-  padding: 7px 10px;
-  background: #ffffff;
-}
-.page-main .cordiant2018-content-wrapp form .closed-form {
-  width: 35px;
-  height: 36px;
-  display: block;
-  position: absolute;
-  top: 10px;
-  right: 15px;
-  background: #ffffff;
-  z-index: 2;
-  cursor: pointer;
-}
-.page-main .cordiant2018-content-wrapp form .closed-form span {
-  color: #999;
-  display: block;
-  position: absolute;
-  top: 17px;
-  left: 10px;
-  font: 30px/0 'OpenSans Light';
-  -moz-transform: rotate(45deg) skewX(0deg);
-  -webkit-transform: rotate(45deg) skewX(0deg);
-  -o-transform: rotate(45deg) skewX(0deg);
-  -ms-transform: rotate(45deg) skewX(0deg);
-  transform: rotate(45deg) skewX(0deg);
-}
-.page-main .cordiant2018-content-wrapp form .closed-form:before {
-  content: '';
-  width: 20px;
-  height: 35px;
-  display: block;
-  position: absolute;
-  top: 0;
-  left: -20px;
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&0+0,1+92 */
-  background: -moz-linear-gradient(left, rgba(255, 255, 255, 0) 0%, #ffffff 92%, #ffffff 100%);
-  /* FF3.6-15 */
-  background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, #ffffff 92%, #ffffff 100%);
-  /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, #ffffff 92%, #ffffff 100%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff', endColorstr='#ffffff', GradientType=1);
-  /* IE6-9 */
-}
-.page-main .cordiant2018-content-wrapp form.active {
-  display: block;
-  z-index: 3;
-}
-.page-main .cordiant2018-content-wrapp:after {
-  content: '';
-  width: 56px;
-  height: 60px;
-  display: block;
-  position: absolute;
-  top: 8px;
-  right: 10px;
-  z-index: 1;
-  opacity: .5;
-  -moz-transform: skewX(15deg);
-  -webkit-transform: skewX(15deg);
-  -o-transform: skewX(15deg);
-  -ms-transform: skewX(15deg);
-  transform: skewX(15deg);
-  background: url('../wiget/cordiant2018/2.png');
-}
-.page-main .cordiant2018-title {
-  width: 160px;
-  height: 60px;
-  z-index: 2;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  bottom: 20px;
-  right: -25px;
-  -moz-transform: skewX(-15deg);
-  -webkit-transform: skewX(-15deg);
-  -o-transform: skewX(-15deg);
-  -ms-transform: skewX(-15deg);
-  transform: skewX(-15deg);
-  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e5799+0,092b73+100 */
-  background: #1e5799;
-  /* Old browsers */
-  background: -moz-radial-gradient(center, ellipse cover, #1e5799 0%, #092b73 100%);
-  /* FF3.6-15 */
-  background: -webkit-radial-gradient(center, ellipse cover, #1e5799 0%, #092b73 100%);
-  /* Chrome10-25,Safari5.1-6 */
-  background: radial-gradient(ellipse at center, #1e5799 0%, #092b73 100%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1e5799', endColorstr='#092b73', GradientType=1);
-  /* IE6-9 fallback on horizontal gradient */
-  -webkit-transition: all 250ms ease-in-out;
-  -moz-transition: all 250ms ease-in-out;
-  -o-transition: all 250ms ease-in-out;
-  -ms-transition: all 250ms ease-in-out;
-  transition: all 250ms ease-in-out;
-}
-@media only screen and (min-width: 1600px) {
-  .page-main .cordiant2018-title {
-    width: 180px;
-    height: 80px;
-  }
-}
-.page-main .cordiant2018-title img {
-  -moz-transform: skewX(15deg);
-  -webkit-transform: skewX(15deg);
-  -o-transform: skewX(15deg);
-  -ms-transform: skewX(15deg);
-  transform: skewX(15deg);
-  position: absolute;
-  top: -33px;
-  left: -15px;
-  z-index: 3;
-}
-@media only screen and (min-width: 1600px) {
-  .page-main .cordiant2018-title img {
-    top: -23px;
-  }
-}
-.page-main .cordiant2018-title p {
-  color: #fff;
-  font: 18px/22px 'OpenSans';
-  text-shadow: 0 1px 0 #000000;
-  text-transform: uppercase;
-  -moz-transform: skewX(15deg);
-  -webkit-transform: skewX(15deg);
-  -o-transform: skewX(15deg);
-  -ms-transform: skewX(15deg);
-  transform: skewX(15deg);
-  text-align: center;
-  margin-left: 25px;
-}
-@media only screen and (min-width: 1600px) {
-  .page-main .cordiant2018-title p {
-    font: 22px/26px 'Exo2 Regular';
-  }
-}
-.page-main .cordiant2018-closed {
-  color: #999;
-  position: absolute;
-  top: 5px;
-  right: 2px;
-  -moz-transform: rotate(45deg) skewX(0deg);
-  -webkit-transform: rotate(45deg) skewX(0deg);
-  -o-transform: rotate(45deg) skewX(0deg);
-  -ms-transform: rotate(45deg) skewX(0deg);
-  transform: rotate(45deg) skewX(0deg);
-  z-index: 3;
-  cursor: pointer;
-}
-@media only screen and (min-width: 1600px) {
-  .page-main .cordiant2018-closed {
-    top: 8px;
-    right: 4px;
-  }
-}
-.page-main .cordiant2018:hover {
-  width: 400px;
-}
-@media only screen and (min-width: 1600px) {
-  .page-main .cordiant2018:hover {
-    width: 480px;
-  }
-}
-@media only screen and (max-width: 768px) {
-  .page-main .cordiant2018:hover {
-    width: 80%;
-  }
-}
-.page-main .cordiant2018:hover .cordiant2018-title {
-  right: -94px;
-}
-@media only screen and (min-width: 1600px) {
-  .page-main .cordiant2018:hover .cordiant2018-title {
-    right: -110px;
-  }
-}
-.page-main .cordiant2018:hover .cordiant2018-content {
+  padding: 0 10px 0 20px;
+  transition: all 300ms ease-in-out;
   opacity: 1;
-  z-index: 1;
-  display: block;
-  right: 31px;
+  visibility: visible;
+  z-index: 2;
 }
-@media only screen and (min-width: 1600px) {
-  .page-main .cordiant2018:hover .cordiant2018-content {
-    right: 60px;
+.page-main .cordiant-active p span {
+  cursor: pointer;
+  border-bottom: 1px dotted #fff;
+  transition: all 300ms ease-in-out;
+}
+.page-main .cordiant-active p span:hover {
+  border-bottom: 0px dotted transparent;
+}
+.page-main .cordiant-active p a {
+  color: #fff;
+  font-weight: 700;
+  display: inline-block;
+  text-decoration: none;
+  position: relative;
+}
+.page-main .cordiant-active p a::after {
+  content: '';
+  width: 100%;
+  height: 1px;
+  display: block;
+  margin: 0 auto;
+  background: #fff;
+  transition: all 300ms ease-in-out;
+}
+.page-main .cordiant-active p a:hover::after {
+  width: 70%;
+}
+.page-main .cordiant-active p.active {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  z-index: -1;
+}
+.page-main .cordiant-active form {
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  margin: 20px 0 20px 20px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 300ms ease-in-out;
+}
+.page-main .cordiant-active form input {
+  width: calc(64%);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  font: 18px/18px 'Fusion';
+  color: #fff;
+  padding: 10px 40px 10px 10px;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+.page-main .cordiant-active form span {
+  width: 20px;
+  height: 20px;
+  display: block;
+  position: absolute;
+  z-index: 3;
+  top: 10px;
+  right: 45px;
+  cursor: pointer;
+  opacity: .5;
+  transition: all 300ms ease-in-out;
+}
+.page-main .cordiant-active form span::before {
+  content: '';
+  width: 100%;
+  height: 1px;
+  display: block;
+  background-color: #fff;
+  position: absolute;
+  top: 9px;
+  left: 0;
+  transform: rotate(45deg);
+}
+.page-main .cordiant-active form span::after {
+  content: '';
+  width: 100%;
+  height: 1px;
+  display: block;
+  background-color: #fff;
+  position: absolute;
+  top: 9px;
+  left: 0;
+  transform: rotate(-45deg);
+}
+.page-main .cordiant-active form span:hover {
+  opacity: 1;
+}
+.page-main .cordiant-active form.active {
+  z-index: 2;
+  opacity: 1;
+  visibility: visible;
+  position: relative;
+}
+.page-main .cordiant-active .logo {
+  display: none;
+}
+.page-main .cordiant-active .img {
+  display: none;
+}
+.page-main .cordiant-active .closed {
+  display: none;
+}
+.page-main .cordiant-active::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  border-bottom: 0;
+  padding-left: 10px;
+  bottom: 0;
+  right: -10px;
+  z-index: 1;
+  border-radius: 5px 0 0 5px;
+  box-shadow: -10px 0px 10px rgba(0, 0, 0, 0.25);
+  background: radial-gradient(50% 50% at 50% 50%, #1E5799 0%, #092B73 100%);
+  transform: skewX(-10deg);
+}
+.page-main .cordiant-active.active {
+  opacity: 1;
+  visibility: visible;
+  margin-right: 0;
+  z-index: 1;
+}
+@media only screen and (min-width: 320px) and (max-width: 959px) {
+  .page-main .cordiant-active.active {
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #094fac;
   }
+  .page-main .cordiant-active.active img {
+    display: block;
+  }
+  .page-main .cordiant-active.active img.img {
+    width: 245px;
+    height: 350px;
+  }
+  .page-main .cordiant-active.active img.logo {
+    width: 310px;
+    margin: 40px;
+  }
+  .page-main .cordiant-active.active p {
+    font-size: 22px;
+    line-height: 32px;
+  }
+  .page-main .cordiant-active.active .closed {
+    width: 20px;
+    height: 20px;
+    display: block;
+    position: absolute;
+    z-index: 3;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    opacity: .5;
+    z-index: 100;
+    transition: all 300ms ease-in-out;
+  }
+  .page-main .cordiant-active.active .closed::before {
+    content: '';
+    width: 100%;
+    height: 1px;
+    display: block;
+    background-color: #fff;
+    position: absolute;
+    top: 9px;
+    left: 0;
+    transform: rotate(45deg);
+  }
+  .page-main .cordiant-active.active .closed::after {
+    content: '';
+    width: 100%;
+    height: 1px;
+    display: block;
+    background-color: #fff;
+    position: absolute;
+    top: 9px;
+    left: 0;
+    transform: rotate(-45deg);
+  }
+  .page-main .cordiant-active.active .closed:hover {
+    opacity: 1;
+  }
+  .page-main .cordiant-active.active::after {
+    display: none;
+  }
+}
+.page-main .cordiant-normal {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.page-main .cordiant-normal-temp {
+  display: flex;
+  align-items: center;
+  margin: 0 10px 10px 0;
+}
+.page-main .cordiant-normal-temp span {
+  color: #274195;
+  font: 22px/22px 'Fusion';
+  padding-right: 5px;
+}
+.page-main .cordiant-normal-item {
+  height: 80px;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.page-main .cordiant-normal-item .img {
+  height: 115px;
+  display: block;
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+  z-index: 2;
+}
+.page-main .cordiant-normal-item span {
+  color: #fff;
+  font: 28px/20px 'Fusion';
+  display: flex;
+  flex-direction: column;
+  margin: 0 20px 10px 115px;
+  position: relative;
+  z-index: 2;
+}
+.page-main .cordiant-normal-item .logo {
+  margin-top: 10px;
+  display: block;
+}
+.page-main .cordiant-normal-item::after {
+  content: '';
+  width: 100%;
+  height: 80px;
+  display: block;
+  position: absolute;
+  border-bottom: 0;
+  padding-left: 10px;
+  right: -10px;
+  z-index: 1;
+  border-radius: 5px 0 0 5px;
+  box-shadow: -10px 0px 10px rgba(0, 0, 0, 0.25);
+  background: radial-gradient(50% 50% at 50% 50%, #1E5799 0%, #092B73 100%);
+  transform: skewX(-10deg);
 }
 .page-section .main {
   display: flex;
@@ -12538,8 +12496,6 @@ yx-axis
 @media only screen and (min-width: 320px) and (max-width: 959px) {
   .rastyagka {
     height: 130px;
-    justify-content: space-between;
-    padding-right: 20px;
   }
   .rastyagka-item img {
     width: 180px;

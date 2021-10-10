@@ -62,22 +62,28 @@
 		<!--#include virtual="includes/layout/anons.html" -->
 		<!--#include virtual="includes/layout/footer.html" -->
 
-		<!-- <div class="cordiant2018">
-			<span class="cordiant2018-closed" onclick="$('.cordiant2018').fadeOut();">+</span>
-			<div class="cordiant2018-content">
-				<div class="cordiant2018-content-wrapp">
-					<p>Среднесуточная температура в вашем городе <span onclick="$('.cordiant2018-content-wrapp p').addClass('hide');$('.cordiant2018-content-wrapp form').addClass('active');">Москва</span> +8°С. Мы рекомендуем поставить <a href="">зимние шины</a>.</p>
-					<form action="#">
-						<div class="closed-form" onclick="$('.cordiant2018-content-wrapp form').removeClass('active');$('.cordiant2018-content-wrapp p').removeClass('hide');"><span>+</span></div>
-						<input type="text" placeholder="Москва">
-					</form>
+		<div class="cordiant">
+			<div class="cordiant-active">
+				<span class="closed"></span>
+				<img src="static/wiget/cordiant/logo.svg" class="logo">
+				<img src="static/wiget/cordiant/img.png" class="img">
+				<p class="js_p">Среднесуточная температура в вашем городе <span class="js_form_show">Москва</span> +7.5°С. Мы предупредим, когда пора ставить <a href="" target="_blank">зимние шины</a>.</p>
+				<form class="js_city_form" action="">
+					<input type="text">
+					<span class="js_form_hide"></span>
+				</form>
+			</div>
+			<div class="cordiant-normal">
+				<div class="cordiant-normal-temp">
+					<span>+7°</span>
+					<img src="static/wiget/cordiant/icon.svg">
+				</div>
+				<div class="cordiant-normal-item">
+					<img src="static/wiget/cordiant/img.png" class="img">
+					<span>Скоро<br>зима<img src="static/wiget/cordiant/logo.svg" class="logo"></span>
 				</div>
 			</div>
-			<div class="cordiant2018-title">
-				<img src="static/wiget/cordiant2018/1.png" alt="">
-				<p>Скоро<br>зима</p>
-			</div>
-		</div> -->
+		</div>
 
 		<script type="text/javascript" src="js/lib/data-href.js"></script>
 	</body>

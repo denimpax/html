@@ -241,4 +241,31 @@ $(document).ready(function(){
   	$('.head-right-profil-loger').show();
   });
 
+	// Cordiant
+	$(document).on('click', '.cordiant-normal', function(){
+		$('.cordiant-active').addClass('active');
+	});
+
+	$(document).on('click', '.js_form_show', function(){
+		$('.js_p').addClass('active');
+		$('.js_city_form').addClass('active');
+	});
+
+	$(document).on('click', '.js_form_hide', function(){
+		$('.js_p').removeClass('active');
+		$('.js_city_form').removeClass('active');
+	});
+
+	$(document).on('click', '.closed', function(){
+		$('.cordiant-active').removeClass('active');
+	});
+
+	$(document).mouseup(function (e){
+		var div = $('.cordiant');
+		if (!div.is(e.target)
+		    && div.has(e.target).length === 0) {
+			div.children('.cordiant-active').removeClass('active');
+		}
+	});
+
 });
