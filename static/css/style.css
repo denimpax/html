@@ -7931,6 +7931,18 @@ yx-axis
   background: radial-gradient(50% 50% at 50% 50%, #1E5799 0%, #092B73 100%);
   transform: skewX(-10deg);
 }
+.page-main .cordiant .js-w_closed {
+  display: none;
+}
+@media only screen and (min-width: 320px) and (max-width: 959px) {
+  .page-main .cordiant .js-w_closed {
+    color: #999 !important;
+    top: auto !important;
+    bottom: -30px;
+    right: 10px;
+    display: block;
+  }
+}
 .page-section .main {
   display: flex;
   flex-wrap: wrap;
