@@ -7656,7 +7656,7 @@ yx-axis
   z-index: 10;
 }
 .page-main .cordiant-active {
-  width: 300px;
+  width: 400px;
   position: relative;
   margin-right: -100px;
   opacity: 0;
@@ -7666,9 +7666,9 @@ yx-axis
 }
 .page-main .cordiant-active p {
   color: #fff;
-  font: 16px/20px 'Roboto Regular';
+  font: 16px/22px 'Roboto Regular';
   position: relative;
-  padding: 0 10px 0 20px;
+  padding: 0 20px 0 40px;
   transition: all 300ms ease-in-out;
   opacity: 1;
   visibility: visible;
