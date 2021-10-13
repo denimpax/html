@@ -7776,6 +7776,14 @@ yx-axis
 .page-main .cordiant-active .closed {
   display: none;
 }
+@media only screen and (min-width: 320px) and (max-width: 959px) {
+  .page-main .cordiant-active-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .page-main .cordiant-active::after {
   content: '';
   width: 100%;
@@ -7795,22 +7803,20 @@ yx-axis
 .page-main .cordiant-active.active {
   opacity: 1;
   visibility: visible;
-  margin-right: 0;
+  margin-right: -20px;
   z-index: 1;
 }
 @media only screen and (min-width: 320px) and (max-width: 959px) {
   .page-main .cordiant-active.active {
     width: 100%;
     position: fixed;
-    z-index: 10;
+    z-index: 20;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    overflow-x: hidden;
+    overflow-y: scroll;
     background: #094fac;
   }
   .page-main .cordiant-active.active img {
