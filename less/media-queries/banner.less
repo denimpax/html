@@ -2,6 +2,7 @@
 	height: 250px;
 	margin-top: 20px;
   display: flex;
+  justify-content: space-between;
   align-items: center;
 	position: relative;
 	overflow: hidden;
@@ -13,37 +14,43 @@
   &-item {
 
     img {
-      width: 260px;
+      max-width: 100%;
       display: block;
     }
   }
 
   &-row {
+    width: 100%;
     display: flex;
+    justify-content: space-between;
     align-items: center;
+    flex: 1;
 
     &-text {
-      font: 80px/84px @fusion;
-      margin-left: 30px;
+      font: 70px/74px @fusion;
+      margin-left: 50px;
     }
 
     &-partner {
       display: flex;
       flex-direction: column;
+      text-align: center;
       align-items: center;
       margin-right: 20px;
 
+      p {
+        width: 100%;
+        font: 16px/16px @regular;
+        text-transform: uppercase;
+      }
+
       .wrapper {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
 
         img {
           height: 40px;
-
-          &:last-child {
-            margin-left: 30px;
-          }
         }
       }
     }
@@ -75,10 +82,20 @@
   
       &-text {
         font: 64px/54px @fusion;
+        margin-left: 20px;
       }
   
       &-partner {
-        margin-right: 30px;
+        width: 230px;
+        margin: 0 20px;
+
+        p {
+          font-size: 16px;
+        }
+
+        img {
+          height: 30px;
+        }
       }
     }
   }
@@ -86,21 +103,14 @@
 
 @media only screen and (min-width: 320px) and (max-width: 959px) {
   .rastyagka {
-    height: 130px;
-
-    &-item {
-      
-      img {
-        width: 180px;
-        margin-left: -30px;
-      }
-    }
+    height: 100px;
   
     &-row {
       flex-direction: column;
+      margin: 20px;
   
       &-text {
-        font: 30px/30px @fusion;
+        font: 24px/20px @fusion;
         margin-left: 0;
       }
   
