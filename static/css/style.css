@@ -12536,6 +12536,7 @@ yx-axis
   .rastyagka-row {
     flex-direction: column;
     margin: 20px;
+    flex: 1 1 auto;
   }
   .rastyagka-row-text {
     font: 24px/20px 'Fusion';
@@ -12546,6 +12547,7 @@ yx-axis
   }
   .rastyagka-row-partner p {
     font-size: 10px;
+    line-height: 5px;
   }
   .rastyagka-row-partner .wrapper img {
     height: 14px;
