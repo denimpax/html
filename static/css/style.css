@@ -12471,7 +12471,7 @@ yx-axis
   flex: 1;
 }
 .rastyagka-row-text {
-  font: 70px/74px 'Fusion';
+  font: 44px/54px 'Fusion';
   margin-left: 50px;
 }
 .rastyagka-row-partner {
@@ -12515,7 +12515,7 @@ yx-axis
     height: 150px;
   }
   .rastyagka-row-text {
-    font: 64px/54px 'Fusion';
+    font: 26px/34px 'Fusion';
     margin-left: 20px;
   }
   .rastyagka-row-partner {
@@ -12539,7 +12539,7 @@ yx-axis
     flex: 1 1 auto;
   }
   .rastyagka-row-text {
-    font: 24px/20px 'Fusion';
+    font: 16px/20px 'Fusion';
     margin-left: 0;
   }
   .rastyagka-row-partner {
