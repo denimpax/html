@@ -12471,8 +12471,8 @@ yx-axis
   flex: 1;
 }
 .rastyagka-row-text {
-  font: 44px/54px 'Fusion';
-  margin-left: 50px;
+  font: 56px/66px 'Fusion';
+  margin-left: 40px;
 }
 .rastyagka-row-partner {
   display: flex;
@@ -12514,9 +12514,12 @@ yx-axis
   .rastyagka {
     height: 150px;
   }
+  .rastyagka-item {
+    flex: 0 0 250px;
+  }
   .rastyagka-row-text {
-    font: 26px/34px 'Fusion';
-    margin-left: 20px;
+    font: 44px/50px 'Fusion';
+    margin-left: 40px;
   }
   .rastyagka-row-partner {
     width: 230px;
