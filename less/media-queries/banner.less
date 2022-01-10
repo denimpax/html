@@ -1,5 +1,5 @@
 .rastyagka {
-	height: 250px;
+	height: 200px;
 	margin-top: 20px;
   display: flex;
   justify-content: space-between;
@@ -12,10 +12,21 @@
   z-index: 1;
 
   &-item {
+    margin-left: 50px;
 
     img {
       max-width: 100%;
       display: block;
+    }
+
+    &-wrapper {
+
+      &-link {
+
+        &:first-child {
+          margin-right: 30px;
+        }
+      }
     }
   }
 
@@ -27,7 +38,7 @@
     flex: 1;
 
     &-text {
-      font: 80px/70px @fusion;
+      font: 50px/60px @fusion;
       margin-left: 40px;
     }
 
@@ -51,6 +62,13 @@
 
         img {
           height: 40px;
+        }
+
+        ._quartz {
+
+          img {
+            height: 46px;
+          }
         }
       }
     }
@@ -76,17 +94,28 @@
 
 @media only screen and (min-width: 960px) and (max-width: 1199px) {
   .rastyagka {
-    height: 150px;
+    height: 200px;
 
     &-item {
-      flex: 0 0 250px;
+      flex: 0 0 190px;
+
+      &-wrapper {
+
+        &-link {
+  
+          &:first-child {
+            margin-bottom: 20px;
+            margin-right: 0;
+          }
+        }
+      }
     }
   
     &-row {
   
       &-text {
-        font: 54px/60px @fusion;
-        margin-left: 40px;
+        font: 44px/50px @fusion;
+        margin-left: 0;
       }
   
       &-partner {
@@ -98,7 +127,21 @@
         }
 
         img {
-          height: 30px;
+          height: 30px !important;
+        }
+
+        ._quartz {
+          
+          img {
+            height: 36px !important;
+          }
+        }
+
+        .wrapper {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
         }
       }
     }
@@ -108,19 +151,35 @@
 @media only screen and (min-width: 320px) and (max-width: 959px) {
   .rastyagka {
     height: 100px;
+
+    &-item {
+      display: none;
+
+      &-wrapper {
+
+        &-link {
+  
+          &:first-child {
+            margin-bottom: 10px;
+            margin-right: 0;
+          }
+        }
+      }
+    }
   
     &-row {
-      flex-direction: column;
+      flex-direction: row;
       margin: 20px;
       flex: 1 1 auto;
   
       &-text {
-        font: 24px/22px @fusion;
+        font: 18px/22px @fusion;
         margin-left: 0;
       }
   
       &-partner {
         margin-right: 0;
+        flex: 0 0 110px;
 
         p {
           font-size: 10px;
@@ -128,13 +187,20 @@
         }
 
         .wrapper {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
 
           img {
             height: 14px;
             margin: 0;
+          }
 
-            &:first-child {
-              margin: 0 20px 0 0;
+          ._quartz {
+
+            img {
+              height: 20px;
             }
           }
         }
