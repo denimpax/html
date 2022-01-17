@@ -12463,9 +12463,8 @@ yx-axis
   margin-left: 50px;
 }
 .rastyagka-item img {
-  height: 190px;
+  max-width: 100%;
   display: block;
-  margin-bottom: -20px;
 }
 .rastyagka-item-wrapper-link:first-child {
   margin-right: 30px;
