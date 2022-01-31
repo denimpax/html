@@ -12491,8 +12491,8 @@ yx-axis
   align-items: center;
   margin-right: 0;
   background: #fff;
-  padding: 52px 20px 52px 40px;
-  clip-path: polygon(10.04% 0%, 100% 0%, 100% 100%, 0% 100%);
+  padding: 52px 40px 52px 80px;
+  clip-path: polygon(10% 0%, 100% 0%, 100% 100%, 0% 100%);
 }
 .rastyagka-row-partner p {
   width: 100%;
@@ -12531,7 +12531,7 @@ yx-axis
     height: 200px;
   }
   .rastyagka-item {
-    flex: 0 0 190px;
+    flex: 0 0 110px;
   }
   .rastyagka-item-wrapper-link:first-child {
     margin-bottom: 20px;
@@ -12543,7 +12543,7 @@ yx-axis
   }
   .rastyagka-row-partner {
     width: 230px;
-    margin: 0 20px;
+    margin: 0;
   }
   .rastyagka-row-partner p {
     font-size: 16px;
@@ -12585,6 +12585,7 @@ yx-axis
   .rastyagka-row-partner {
     margin-right: 0;
     flex: 0 0 110px;
+    padding: 52px 20px 52px 30px;
   }
   .rastyagka-row-partner p {
     font-size: 10px;
