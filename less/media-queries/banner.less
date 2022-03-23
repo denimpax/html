@@ -7,12 +7,12 @@
 	position: relative;
 	overflow: hidden;
 	cursor: pointer;
-	background: #f00;
+	background: #fff;
 	border: 1px solid #ccc;
   z-index: 1;
 
   &-item {
-    margin-left: 30px;
+    // margin-left: 30px;
 
     img {
       max-width: 100%;
@@ -38,9 +38,9 @@
     flex: 1;
 
     &-text {
-      font: 50px/60px @fusion;
-      margin-left: 30px;
-      color: #fff;
+      font: 66px/60px @fusion;
+      margin-left: 80px;
+      color: #333;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -53,8 +53,8 @@
       align-items: center;
       margin-right: 0;
       background: #fff;
-      padding: 52px 40px 52px 80px;
-      clip-path: polygon(10.00% 0.00%,100.00% 0.00%,100% 100%,0% 100%);
+      // padding: 52px 40px 52px 80px;
+      // clip-path: polygon(10.00% 0.00%,100.00% 0.00%,100% 100%,0% 100%);
 
       p {
         width: 100%;
@@ -104,7 +104,7 @@
     height: 200px;
 
     &-item {
-      flex: 0 0 110px;
+      // flex: 0 0 110px;
 
       &-wrapper {
 
@@ -122,7 +122,7 @@
   
       &-text {
         font: 44px/50px @fusion;
-        margin-left: 0;
+        margin-left: 30px;
       }
   
       &-partner {
@@ -157,14 +157,15 @@
 
 @media only screen and (min-width: 320px) and (max-width: 959px) {
   .rastyagka {
-    height: 100px;
+    height: auto;
+    flex-direction: column;
 
     &-item {
       // display: none;
 
       img {
-        height: 40px !important;
-        margin-right: 0 !important;
+        // height: 40px !important;
+        // margin-right: 0 !important;
       }
 
       &-wrapper {
@@ -180,19 +181,19 @@
     }
   
     &-row {
-      flex-direction: row;
-      margin: 0 0 0 20px;
-      flex: 1 1 auto;
+      flex-direction: column;
+      // margin: 0 0 0 20px;
+      // flex: 1 1 auto;
   
       &-text {
-        font: 18px/22px @fusion;
-        margin-left: 0;
+        font: 30px/30px @fusion;
+        margin: 20px 0;
       }
   
       &-partner {
         margin-right: 0;
-        flex: 0 0 110px;
-        padding: 52px 20px 52px 30px;
+        // flex: 0 0 110px;
+        // padding: 52px 20px 52px 30px;
 
         p {
           font-size: 10px;
